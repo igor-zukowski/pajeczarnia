@@ -1,5 +1,4 @@
-html,body{
-    
+html,body{ 
     height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -30,31 +29,35 @@ nav{
     text-decoration: none;
     list-style: none;
     height: 100%;
+
 }
 
-    ul {
+ul{
     list-style-type: none;
     list-style: none;
-  }
 
-    li {
-    float: right;
-    color: rgb(44, 71, 29);
 }
 
-    li a {
+li{
+    float: right;
+    color: rgb(44, 71, 29);
+
+}
+
+li a{
     display: block;
     color: rgb(44, 71, 29);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
-    li a:hover {
-    
+li a:hover{  
     border: 1px solid rgb(44, 71, 29);
     border-radius: 25px;
-  }
+
+}
 
 article{
     background-image: url(/img/IMG_8791.JPG);
@@ -78,22 +81,26 @@ section h1{
     font-size: 40px;
     letter-spacing: 3px;
     text-align: center;
+
 }
 
 section h2{
     font-size: 30px;
     font-weight: 400;
     margin-left: 5%;
+
 }
 
-section h3 {
+section h3{
     margin-left: 7%;
     width: 15%;
+
 }
 
     
 section p{
     margin-left: 20%;
+
 }
 
 .smallMargin{
@@ -104,6 +111,7 @@ section p{
     background-color: rgba(238, 255, 255, 0.596);
     border-radius: 100px;
     overflow: auto;
+
 }
 
 
@@ -123,7 +131,7 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-    article {
+    article{
         background-position: 60% 0%;
         
     }
@@ -132,9 +140,10 @@ footer{
     header img{
         
         height: auto;
-        width: 95%;
+        width: 60%;
         margin-right: auto;
-        margin-left: 0.5vh;
+        margin-left: 10vh;
+
     }
 
     nav{
@@ -148,9 +157,10 @@ footer{
         list-style: none;
         height: auto;
         background-color: rgba(255, 255, 255, 0.582);
+
     }
 
-    ul {
+    ul{
         display: flex;
         list-style-type: none;
         margin: 0;
@@ -158,41 +168,33 @@ footer{
         padding: 0;
         list-style: none;
         
-      }
+    }
     
-        li {
+    li{
         display: flex;
         margin-left: 0;
         margin-right: 2%;
         color: rgb(44, 71, 29);
         margin-top: 6px;
         font-size: 15px;
+
     }
     
-        li a {
+    li a{
         display: flex;
         color: rgb(44, 71, 29);
         text-align: center;
         padding: 7px 8px;
         text-decoration: none;
+
     }
     
-        li a:hover {
+    li a:hover{
         
         border: 1px solid rgb(44, 71, 29);
         border-radius: 25px;
-      }
 
-    
-    
-    #menu > img{
-        float: right;
-        width: 15%;
-        height: auto;
-        margin-left: auto;
-        margin-right: 23.5%;
-        margin-bottom: 2%;
-    }
+      }
     
     section{
     
@@ -202,7 +204,6 @@ footer{
         float: right;
         background-color: rgba(238, 255, 255, 0.596);
         border-radius: 25px;
-    
         
     }
     
@@ -211,6 +212,7 @@ footer{
         letter-spacing: 3px;
         text-align: center;
         margin-bottom: 0px;
+
     }
     
     section h2{
@@ -218,18 +220,22 @@ footer{
         font-weight: 400;
         margin-left: 5%;
         margin-bottom: 0px;
+
     }
     
-    section h3 {
+    section h3{
         margin-left: 7%;
         width: 15%;
         font-size: 15px;
         margin-bottom: 0px;
+        font-weight: 900;
+
     }
     
         
     section p{
-        margin-left: 20%;
+        margin-left: 15%;
+
     }
     
     .smallMargin{
@@ -241,6 +247,7 @@ footer{
         background-color: rgba(238, 255, 255, 0.596);
         border-radius: 25px;
         overflow: scroll;
+
     }
     
     
