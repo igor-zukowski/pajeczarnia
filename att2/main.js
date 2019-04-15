@@ -1,11 +1,27 @@
 var btn1 = document.getElementById('link1');
 var btn2 = document.getElementById('link2');
 var res = document.documentElement.clientWidth;
+var infoBox = document.getElementsByTagName('article');
+var img1 = document.getElementById('link1');
+var img2 = document.getElementById('link2');
+
+
+
+function zgloszenie(){
+    
+    btn2.className = "blink";
+    btn1.className = "blink";
+
+    setTimeout(noBlink, 2600); 
+
+};
 
 btn1.style.cursor = 'pointer';
 btn2.style.cursor = 'pointer';
-btn1.onclick = ()=> location.href = "zuchZglos.html";
-btn2.onclick = ()=> location.href = "harcglos.html"
+btn1.onclick = ()=> location.href = "https://forms.gle/7ZhESe9WytKYYXst5";
+btn2.onclick = ()=> location.href = "https://forms.gle/phgTCvzup9grq8Mf7";
+
+
 
 
 function informacja(){
@@ -18,3 +34,16 @@ function informacja(){
         document.getElementById('infoBox').style = 'margin-top: 2%;';
     };
 };
+
+
+function noBlink(){
+    btn1.className = ""; 
+    btn2.className = ""; 
+}
+
+
+
+
+
+
+

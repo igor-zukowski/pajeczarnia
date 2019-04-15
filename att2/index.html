@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Montserrat:400,600i,700|Poppins:400,600i,700&amp;subset=latin-ext" rel="stylesheet">
     
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div id="nav">
            <div id="navbar"> 
             <li><a href="#" onclick="zgloszeni()">Kto się zgłosił</a></li>
-            <li><a href="#">Zgłoszenie</a></li>
+            <li><a id="zgloszenie" href="#" onclick="zgloszenie()">Zgłoszenie</a></li>
             <li><a href="#" onclick="informacja()">Informacje</a></li>
             <div style="clear:both;"></div>
            </div>
@@ -25,9 +26,10 @@
     <article>
         <div id="menu">
             <p>Wybierz pion:</p>
-                <img id="link1" src="/img/pwd-zuch.png">
+                <img class="linkImg" id="link1" src="/img/pwd-zuch.png" alt="Zgłoszenie na kurs">
             <hr id="menuLine">
-                <img id="link2" src="/img/pwd-harc.png">
+                <img class="linkImg" id="link2" src="/img/pwd-harc.png" alt="Zgłoszenie na kurs">
+            
 
         </div>
         <div id="infoBox">
