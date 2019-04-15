@@ -7,7 +7,10 @@ function kontakt(){
     section.className = "smallMargin";
     $( "#content" ).load( "kontakt.html" );
     };
-
+function zgloszeni(){
+    section.className = "smallMargin";
+    $( "#content" ).load( "zgloszeni.html" );
+    };
 
 
 

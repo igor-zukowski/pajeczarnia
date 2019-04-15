@@ -77,6 +77,11 @@ section{
     
 }
 
+section iframe{
+    margin-left: 30%;
+    width: 40%;
+}
+
 section h1{
     font-size: 40px;
     letter-spacing: 3px;
@@ -173,10 +178,10 @@ footer{
     li{
         display: flex;
         margin-left: 0;
-        margin-right: 2%;
+        margin-right: 0%;
         color: rgb(44, 71, 29);
         margin-top: 6px;
-        font-size: 15px;
+        font-size: 14px;
 
     }
     
@@ -205,6 +210,10 @@ footer{
         background-color: rgba(238, 255, 255, 0.596);
         border-radius: 25px;
         
+    }
+
+    section iframe{
+        margin-left: auto;
     }
     
     section h1{
