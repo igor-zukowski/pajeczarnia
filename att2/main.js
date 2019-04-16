@@ -1,3 +1,5 @@
+
+  
 var section = document.getElementById("section1");
 function informacja(){
     section.className = "smallMargin";

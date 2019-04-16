@@ -24,7 +24,7 @@ header img{
 nav{
     float: right;
     width: auto;
-    margin: 1.5% 3vh auto auto;
+    margin: 1.1% 3vh auto auto;
     margin-right: 5vh;
     text-decoration: none;
     list-style: none;
@@ -74,7 +74,31 @@ section{
     float: right;
     background-color: rgba(238, 255, 255, 0.596);
     border-radius: 100px;
+    overflow: auto;
+
     
+}
+
+#zgloszeni p{
+    width: 30%;
+    float: left;
+    margin-left: 1%;
+    
+}
+
+.data{
+    font-size: 13px;
+    font-weight: 900;
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+
+.tresc{
+    font-size: 25px;
+    font-family: lato;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-bottom: 4%;
 }
 
 section iframe{
@@ -116,12 +140,24 @@ section p{
     float: right;
     background-color: rgba(238, 255, 255, 0.596);
     border-radius: 100px;
-    overflow-y: scroll;
+    
     
 
 }
 
-.smallMargin::-webkit-scrollbar { width: 0 !important };
+.smallMargin2{
+    width: 80%;
+    height: 90%;
+    margin-right: 10%;
+    margin-top: 3%;
+    float: right;
+    background-color: rgba(238, 255, 255, 0.596);
+    border-radius: 100px;
+    
+    
+
+}
+
 
 
 
