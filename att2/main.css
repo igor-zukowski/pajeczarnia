@@ -110,16 +110,18 @@ section p{
 
 .smallMargin{
     width: 60%;
+    height: 90%;
     margin-right: 20%;
     margin-top: 3%;
     float: right;
     background-color: rgba(238, 255, 255, 0.596);
     border-radius: 100px;
-    overflow: auto;
+    overflow-y: scroll;
+    
 
 }
 
-
+.smallMargin::-webkit-scrollbar { width: 0 !important };
 
 
 
