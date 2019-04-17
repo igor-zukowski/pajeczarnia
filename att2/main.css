@@ -20,6 +20,9 @@ header img{
     
 }
 
+.mobile{
+    display: none;
+}
 
 nav{
     float: right;
@@ -84,6 +87,12 @@ section{
     float: left;
     margin-left: 1%;
     
+}
+
+#contentP{
+    width: 30%;
+    float: left;
+    margin-left: 1%;
 }
 
 .data{
@@ -152,7 +161,7 @@ section p{
     margin-top: 3%;
     float: right;
     background-color: rgba(238, 255, 255, 0.596);
-    border-radius: 100px;
+    border-radius: 70px;
     
     
 
@@ -185,12 +194,37 @@ footer{
         height: auto;
         width: 60%;
         margin-right: auto;
-        margin-left: 10vh;
+        margin-left: 11vh;
 
     }
 
-    nav{
+    .mobile{
+        display: block;
+        background-color: rgba(255, 255, 255, 0.349)
+
+    }
+
+    .btn-group{
+        margin-left: 5%;
+        position: relative;
+        padding: 10px;
+        width: 40%;
+    }
+
+    #timer{
+        float: right;
+        width: 30%;
+        margin-top: 2%;
+        margin-right: 3%; 
+        font-family: Lato;
+        font-size: 25px;
+          
+    }
+
+    .desktop{
         
+        
+        display: none;
         align-items: center;
         width: 100vh;
         margin-bottom: 0;
@@ -295,6 +329,19 @@ footer{
         border-radius: 25px;
         overflow: scroll;
 
+    }
+
+    .smallMargin2{
+        width: 90%;
+        height: 90%;
+        margin-right: 5%;
+        margin-top: 3%;
+        float: right;
+        background-color: rgba(238, 255, 255, 0.596);
+        border-radius: 25px;
+        
+        
+    
     }
     
     

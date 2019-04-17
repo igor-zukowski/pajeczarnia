@@ -10,7 +10,7 @@ window.fbAsyncInit = function() {
 let xhr = new XMLHttpRequest();
 let xhrFb = new XMLHttpRequest();
 let url = "https://script.googleusercontent.com/macros/echo?user_content_key=OZolaW75w2etM1DWiHtCJbyz6daH8UiuiDZMvsARKJa0fTxbq-edk3n69EXZDCySWwiNsvuufqoQYZrXm6NYO9DQc0JY78Uvm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJzGU1Fnd1jadqsLsgdNthl5omCvg3us9Pync5qAzyHl6n73ml4GpN5mfszHmEqfibiiahthl8jg&lib=MPysWlIpktTqDE8rrb0Fcmz8oNvKE2J6l";
-let urlFb = "https://graph.facebook.com/v3.2/taniszpil/published_posts?access_token=EAAfGFjadkk8BAMeBzJcMZAWV9yZCunpaJ1m9kOCV0IwDEDAZASVTcTXjxSdWIysGbaQPjJOm7KxwZC5LNhSZCU0qnhP6sOUNGmBeiXiSqRNzm2hYVZBmIS6Clz6vBPFXrREZCoAkk4z9m2esv9hukR860Qfhid9DHNJgMVgbtqRuOQa2dYySSobe1CcwxDQj47ZACPCnpOytxgZDZD"
+let urlFb = "https://graph.facebook.com/v3.2/taniszpil/published_posts?access_token=EAAfGFjadkk8BACMH47HwDezBZAwZB4Ql3FpdNjdhidGXGbvdgOcZCvsZCwUEB5SfBYpwZBP5xdxcp74S7M7Lrcw51ApJ3ezFcbt3KuBkMGd4UL5sFhgktqwIJo1ru8tEgEkpYUwPcaLahBckeN1ZAf12xFrXY0WLymlWDkTbbZAIZCMu6requj1AZACeGZASZC2gZCZA9kZBE02FCvNwZDZD"
 let json;
 let jLength;
 let date;
@@ -22,7 +22,7 @@ xhr.addEventListener('load', function() {
         json = JSON.parse(this.responseText);
         jLength = Object.keys(json.zgloszenia).length
         console.log(json);
-        onload();
+        dataPrint();
     }
 })
 xhr.send();
@@ -33,7 +33,7 @@ xhrFb.addEventListener('load', function() {
     if (this.status === 200) {
         posts = JSON.parse(this.responseText);
         console.log(posts);
-        //dataPrintFb();
+        dataPrintFb();
     }
 })
 xhrFb.send();
@@ -64,13 +64,15 @@ function dataPrint(){
     Object.keys(json.zgloszenia).forEach(function(k){
     console.log(json.zgloszenia[k]);
 
-    let box = document.getElementById('zgloszeni');
-    section.className = "smallMargin2";
-    box.innerHTML = box.innerHTML + "<p> Imie: "+json.zgloszenia[k].Imie; "</p>"
-    box.innerHTML = box.innerHTML + "<p> Nazwisko: "+json.zgloszenia[k].Nazwisko; "</p>"
-    box.innerHTML = box.innerHTML + "<p> Kurs: "+json.zgloszenia[k].Kurs; "</p>"
+    let box = document.getElementById('zgloszeniData');
+    //section.className = "smallMargin2";
+    box.innerHTML = box.innerHTML + '<p id="contentP"> Imie: '+json.zgloszenia[k].Imie; '</p>'
+    box.innerHTML = box.innerHTML + '<p id="contentP"> Nazwisko: '+json.zgloszenia[k].Nazwisko; '</p>'
+    box.innerHTML = box.innerHTML + '<p id="contentP"> Kurs: '+json.zgloszenia[k].Kurs; '</p>'
 });
 }
+
+
 
 function dataPrintFb(){
 
@@ -86,13 +88,15 @@ function dataPrintFb(){
     actualHour = parseInt(hour, 10)+2;
     time = actualHour+":"+min;
     var createdTime = day+"."+month+"."+year+"   godz. "+time;
-    let box = document.getElementById('section1');
-    box.className = "smallMargin2";
+    let box = document.getElementById('sFb');
+    //box.className = "smallMargin2";
     box.innerHTML = box.innerHTML + '<p class="data">' + createdTime + '<p>'
     box.innerHTML = box.innerHTML + '<p class="tresc">' + posts.data[k].message + '</p>'
     console.log(createdTime);
+
 });
 }
+
 
 
 
