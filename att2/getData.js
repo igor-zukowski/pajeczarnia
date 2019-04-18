@@ -10,7 +10,7 @@ window.fbAsyncInit = function() {
 let xhr = new XMLHttpRequest();
 let xhrFb = new XMLHttpRequest();
 let url = "https://script.googleusercontent.com/macros/echo?user_content_key=OZolaW75w2etM1DWiHtCJbyz6daH8UiuiDZMvsARKJa0fTxbq-edk3n69EXZDCySWwiNsvuufqoQYZrXm6NYO9DQc0JY78Uvm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJzGU1Fnd1jadqsLsgdNthl5omCvg3us9Pync5qAzyHl6n73ml4GpN5mfszHmEqfibiiahthl8jg&lib=MPysWlIpktTqDE8rrb0Fcmz8oNvKE2J6l";
-let urlFb = "https://graph.facebook.com/v3.2/taniszpil/published_posts?access_token=EAAfGFjadkk8BAFaIU9ZCPdEyGxK8osWV0ZACo3kgJA3qZCNlPdxtQnnjcOvZBmPmBPqcZA0KU4ZBcrABRUoNwsZCRIxII2rEPFEa1Uy48c86KktSTL4kyVXP9YHBqCBRZAAmvZAxVqcfWOXyCcZCEwD0PCexgsEO6aPgzccoqXV6rUVFR0Q6JOt3WvTT15kPdDeWgCjKInO4wDngZDZD"
+let urlFb = "https://graph.facebook.com/v3.2/taniszpil/published_posts?access_token=EAAfGFjadkk8BAHjeAEyPhxALQCIH5xZAIkX9kWTexvZBf8Q2Bc3J7Y9OkPNvT7mBgkxkXHRdZChXaTMOauZCf1UA8zWjsuZCWuu36r1iba7fRri3iSUsmBkBK47skoVjit9ua4tpmTCt0dm1HbrLftsjs39pdNwbybnS8OqzZAzgZDZD"
 let json;
 let jLength;
 let date;
