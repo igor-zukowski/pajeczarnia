@@ -38,22 +38,6 @@ xhrFb.addEventListener('load', function() {
 })
 xhrFb.send();
 
-
-
-
-// FB.api(
-//     '/taniszpil/published_posts',
-//     'GET',
-//     {'EAAfGFjadkk8BAGLTCClB83yZBqpcRpSh7H2NtfK0tPEchNSDLwdg8G7qk4HgmlhZC7e6wzC6Jo7ZC13WK3RRngl97YYxm4rFWteXL7cwiTen1NfPziCjkpd7PacuSiANbjltfXZBqZBMHIjFylBFwkvy4CxGyVPZAIk6pdfLgpMYFsOUyOHLeVk78dcvdx5BgD57xgEZBBUSwZDZD'},
-//     function(response) {
-//         // Insert your code here
-//         console.log(response);
-//     }
-//   );
-
-
-
-
 function onload(){
     
 }
@@ -93,7 +77,7 @@ function dataPrintFb(){
     //box.className = "smallMargin2";
     if(posts.data[k].message){
 	box.innerHTML = box.innerHTML + '<p class="data">' + createdTime + '<p>'
-    box.innerHTML = box.innerHTML + '<p class="tresc">' + posts.data[k].message + '</p>'
+    	box.innerHTML = box.innerHTML + '<p class="tresc">' + posts.data[k].message + '</p>'
 	}
     console.log(createdTime);
 
